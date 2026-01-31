@@ -1,7 +1,8 @@
 package com.manu.weathercontrol.features.weather.presentation.components
 
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Build
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class TabItem(
@@ -9,9 +10,9 @@ sealed class TabItem(
     val title: String,
     val icon: ImageVector
 ) {
-    object Clima : TabItem("clima", "Clima", Icons.Default.Build)
-    object Ropa : TabItem("ropa", "Ropa", Icons.Default.Build)
-    object Comida : TabItem("comida", "Comida", Icons.Default.Build)
-    object Actividad : TabItem("actividad", "Actividad", Icons.Default.Build)
-    object Seguridad : TabItem("seguridad", "Seguridad", Icons.Default.Build)
+    object Clima : TabItem("clima", "Clima", Icons.Default.Home)
+    object Ropa : TabItem("ropa", "Ropa", Icons.Default.Info)
+    object Comida : TabItem("comida", "Comida", Icons.Default.Info)
+    object Actividad : TabItem("actividad", "Actividad", Icons.Default.Info)
+    object Seguridad : TabItem("seguridad", "Seguridad", Icons.Default.Info)
 }
